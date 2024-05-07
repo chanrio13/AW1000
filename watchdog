@@ -1,0 +1,12 @@
+
+config watchdog
+	option iface 'wan'
+	option restartcmd 'at+cfun=1,1'
+	option dest 'fast.com'
+	option delay '120'
+	option period '1'
+	option period_count '3'
+	option enabled '1'
+	option action 'wan'
+	option log 'all'
+
