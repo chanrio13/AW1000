@@ -1,1 +1,1 @@
-make image PROFILE="arcadyan_aw1000" PACKAGES="luci-app-lite-watchdog luci-app-3ginfo-lite luci-app-modemband" FILES="files"
+make image PROFILE="arcadyan_aw1000" PACKAGES="luci qmi-utils luci-proto-qmi luci-app-lite-watchdog luci-app-3ginfo-lite luci-app-modemband" FILES="files"
