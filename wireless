@@ -1,0 +1,32 @@
+
+config wifi-device 'radio0'
+	option type 'mac80211'
+	option path 'platform/soc@0/c000000.wifi'
+	option channel '36'
+	option band '5g'
+	option htmode 'HE80'
+	option cell_density '0'
+
+config wifi-device 'radio1'
+	option type 'mac80211'
+	option path 'platform/soc@0/c000000.wifi+1'
+	option channel '11'
+	option band '2g'
+	option htmode 'HE20'
+	option cell_density '0'
+
+config wifi-iface 'wifinet0'
+	option device 'radio0'
+	option mode 'ap'
+	option ssid 'OpenWrt_5G'
+	option encryption 'none'
+	option key '13iloverio'
+	option network 'lan'
+
+config wifi-iface 'wifinet1'
+	option device 'radio1'
+	option mode 'ap'
+	option ssid 'OpenWrt'
+	option encryption 'none'
+	option network 'lan'
+
